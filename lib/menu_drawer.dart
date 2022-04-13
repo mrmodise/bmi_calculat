@@ -42,7 +42,7 @@ class MenuDrawer extends StatelessWidget {
               break;
             default:
           }
-          // Navigator.of(context).pop();
+          Navigator.of(context).pop();
           Navigator.of(context)
               .push(MaterialPageRoute(builder: (context) => screen));
         },

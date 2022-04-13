@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BottomNavigation extends StatelessWidget {
-  const BottomNavigation({Key? key}) : super(key: key);
+class MenuBottom extends StatelessWidget {
+  const MenuBottom({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class BottomNavigation extends StatelessWidget {
               Navigator.pushNamed(context, '/');
               break;
             case 1:
-              Navigator.pushNamed(context, '/bmi');
+              Navigator.pushNamed(context, 'bmi');
               break;
           }
         },

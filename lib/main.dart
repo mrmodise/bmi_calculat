@@ -16,7 +16,7 @@ class GlobeApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blueGrey),
       routes: {
         '/': (context) => const IntroScreen(),
-        '/bmi': (context) => const BmiScreen()
+        'bmi': (context) => const BmiScreen()
       },
       initialRoute: '/',
     );
