@@ -1,24 +1,24 @@
-import 'package:bmi_calculator/menu_drawer.dart';
+import 'package:bmi_calculator/bmi_screen.dart';
+import 'package:bmi_calculator/intro_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const GlobeApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class GlobeApp extends StatelessWidget {
+  const GlobeApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Globo Fitness')),
-        drawer: const MenuDrawer(),
-        body: const Center(
-          child: Text('Commit to be fit, dare ti be great with Globo Fitness'),
-        ),
-      )
+      theme: ThemeData(primarySwatch: Colors.blueGrey),
+      routes: {
+        '/': (context) => const IntroScreen(),
+        '/bmi': (context) => const BmiScreen()
+      },
+      initialRoute: '/',
     );
   }
 }
