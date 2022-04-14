@@ -1,5 +1,6 @@
 import 'package:bmi_calculator/bmi_screen.dart';
 import 'package:bmi_calculator/intro_screen.dart';
+import 'package:bmi_calculator/sessions_screen.dart';
 import 'package:bmi_calculator/weather_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -43,6 +44,9 @@ class MenuDrawer extends StatelessWidget {
               break;
             case 'Weather':
               screen = const WeatherScreen();
+              break;
+              case 'Training':
+              screen = const SessionsScreen();
               break;
             default:
           }
